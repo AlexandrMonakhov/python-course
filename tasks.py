@@ -28,9 +28,11 @@ print(f'Произведение цифр {integer_number} равна {first_num
 rubles = int(input("Введите кол-во рублей: "))
 kopecks = int(input("Введите кол-во копеек: "))
 balls = int(input("Введите кол-во мячей: "))
-sum = (rubles + kopecks) * balls
+total_kopecks = (rubles * balls * 100) + (kopecks * balls)
+kops = total_kopecks % 100
+rubs = (total_kopecks - kops) / 100
 
-print(f'За {balls} мяча нужно заплатить {sum // 10} рублей {sum % 10} копеек')
+print(f'За {balls} мяча нужно заплатить {int(rubs)} рублей {kops} копеек')
 
 # Задание №5
 time = int(input("Введите время в секундах: "))
