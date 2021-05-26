@@ -1,0 +1,33 @@
+Index: tasks.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Задание №1\r\n\r\nprint(\"G\", \"l\", \"o\", sep=\"\", end=\" \")\r\nprint(\"A\", \"ca\", \"de\", sep=\"\", end=\"\")\r\nprint(\"my\", sep=\"\\n\")\r\n\r\nprint('Glo Academy')\r\n\r\n# Задание №2\r\nprint(\"Как тебя зовут?\")\r\nname = input()\r\nprint(\"Привет,\", \"{\", name, \"}\")\r\n\r\n#Задание №3\r\n\r\nname = input(\"Привет, давай познакомимся с тобой? Как тебя зовут?\")\r\nsurname = input(\"А теперь я хочу узнать твою фамилию! Какая твоя фамилия?\")\r\npatronymic = input(\"И на последок, скажи мне твое отчество, пожалуйста!\")\r\n\r\nprint(f'Я рад с тобой познакомиться!{name}-{surname}-{patronymic}')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tasks.py b/tasks.py
+--- a/tasks.py	(revision 18f8fa873f143de98ecc9b8df5195a60ed3ea4d3)
++++ b/tasks.py	(date 1621869028262)
+@@ -4,17 +4,17 @@
+ print("A", "ca", "de", sep="", end="")
+ print("my", sep="\n")
+ 
+-print('Glo Academy')
++print('Glo Academy', sep="\n")
+ 
+ # Задание №2
+ print("Как тебя зовут?")
+ name = input()
+-print("Привет,", "{", name, "}")
++print(f"Привет, {name}")
+ 
+-#Задание №3
++# Задание №3
+ 
+ name = input("Привет, давай познакомимся с тобой? Как тебя зовут?")
+ surname = input("А теперь я хочу узнать твою фамилию! Какая твоя фамилия?")
+ patronymic = input("И на последок, скажи мне твое отчество, пожалуйста!")
+ 
+-print(f'Я рад с тобой познакомиться!{name}-{surname}-{patronymic}')
+\ No newline at end of file
++print(f'Я рад с тобой познакомиться!{name}-{surname}-{patronymic}')
