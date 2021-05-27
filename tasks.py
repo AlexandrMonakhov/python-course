@@ -17,7 +17,7 @@ post_3 = input('Введите текст статьи: ')
 
 print(max(post_1, post_2, post_3))
 
-# # Задание №4
+# Задание №4
 team = input('Введите название команды: ')
 print(team * 5)
 
