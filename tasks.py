@@ -24,7 +24,7 @@ print(team * 5)
 # Задание №5
 email = input('Введите ваш Email: ')
 
-if '@' and '.' in email:
+if '@' in email and '.' in email:
     print('Корректный')
 else:
     print('Некорректный')
