@@ -1,35 +1,35 @@
-# # Задание №1
-# for i in range(25):
-#     print('Hello, GloAcademy!')
+# Задание №1
+for i in range(25):
+    print('Hello, GloAcademy!')
 
-# # Задание №2
-# number = int(input('Введите число:'))
-# for i in range(number + 1):
-#     print(f'Квадрат числа {i} равен {i ** 2}')
+# Задание №2
+number = int(input('Введите число:'))
+for i in range(number + 1):
+    print(f'Квадрат числа {i} равен {i ** 2}')
 
-# # Задание №3
-# a = int(input('Введите первое число: '))
-# b = int(input('Введите второе число: '))
-#
-# for i in range(min(a, b), max(a, b) + 1):
-#     print(i)
+# Задание №3
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
 
-# # Задание №4
-# a = int(input('Введите первое число: '))
-# b = int(input('Введите второе число: '))
-#
-# for i in range(min(a, b), max(a, b) + 1):
-#     if i % 2 == 0:
-#         print(i)
+for i in range(min(a, b), max(a, b) + 1):
+    print(i)
 
-# # Задание №5
-# number = int(input('Введите число: '))
-#
-# for i in range(1, 11):
-#     print(f'{number} x {i} = {number * i}')
+# Задание №4
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
+
+for i in range(min(a, b), max(a, b) + 1):
+    if i % 2 == 0:
+        print(i)
+
+# Задание №5
+number = int(input('Введите число: '))
+
+for i in range(1, 11):
+    print(f'{number} x {i} = {number * i}')
 
 # Задание №6
-# print(f'Сумма равна {sum([i for i in range(int(input("Введите число: ")) + 1) if i % 10 in [1, 3, 7]])}')
+print(f'Сумма равна {sum([i for i in range(int(input("Введите число: ")) + 1) if i % 10 in [1, 3, 7]])}')
 
 # Задание №7
 number = int(input('Введите число: '))
