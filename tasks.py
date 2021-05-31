@@ -45,9 +45,9 @@ else:
     print(total)
 
 # Задание №8
-num_min = int(input("Введите минимальное число: "))
-num_max = int(input("Введите максимальное число: "))
 num = int(input("Введите кол-во цифр для ввода далее: "))
+num_min = num
+num_max = num
 if num >= 2:
     for i in range(1, num + 1):
         print("____________________________________")
@@ -62,13 +62,12 @@ if num >= 2:
 
 # Заданеие №9
 flag = 0
-
 num = int(input("Введите кол-во цифр для ввода далее: "))
 
 for i in range(1, num + 1):
     print("____________________________________")
     num = int(input())
-    if num % 10 != 2:
+    if num % 2 != 0:
         flag = 1
 if flag == 1:
     print("YES")
@@ -77,11 +76,13 @@ else:
 
 # Задание №10
 flag = 0
+
 num = int(input("Введите кол-во цифр для ввода далее: "))
+
 for i in range(1, num + 1):
     print("____________________________________")
     num = int(input())
-    if num % 10 != 2:
+    if num % 2 != 0:
         flag += 1
 if flag == num:
     print("YES")
