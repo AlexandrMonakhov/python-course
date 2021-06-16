@@ -27,39 +27,39 @@ while tmp_num != 0:
     total += tmp_num % 10
     tmp_num = tmp_num // 10
 
-    if num % total == 0:
-        print("YES")
-    else:
-        print("NO")
+if num % total == 0:
+    print("YES")
+else:
+    print("NO")
 
 # Задание №4
 num = int(input('Введите число: '))
-max = 1
-min = 1
+max = 0
+min = 10
 
-while num >= 10:
+while num != 0:
     last_digit = num % 10
-    num = num // 10
 
     if last_digit > max:
         max = last_digit
     if last_digit < min:
         min = last_digit
+    num = num // 10
 
 print(f"Максимальная цифра равна {max}")
 print(f"Минимальная цифра равна {min}")
 
-# Задание №5
+Задание №5
 num = int(input('Введите число: '))
 positive = 0
 negative = 0
 
 while num != 0:
-    num = int(input())
     if num > 0:
         positive += 1
-    elif num < 0:
+    if num < 0:
         negative += 1
+    num = int(input('Введите число: '))
 
 print(f'Произведение кол-ва положительных на отрицательные {positive * negative}')
 
@@ -69,8 +69,8 @@ sum = 0
 count = 0
 
 while num != 0:
-    num = int(input('Введите число: '))
-    count += 1
     sum += num
+    count += 1
+    num = int(input('Введите число: '))
 
 print(f'Среднее арифметическое равно: {ceil(sum / count)}')
