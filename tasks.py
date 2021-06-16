@@ -49,7 +49,7 @@ while num != 0:
 print(f"Максимальная цифра равна {max}")
 print(f"Минимальная цифра равна {min}")
 
-Задание №5
+# Задание №5
 num = int(input('Введите число: '))
 positive = 0
 negative = 0
